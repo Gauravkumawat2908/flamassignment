@@ -1,0 +1,20 @@
+{
+  "name": "collaborative-canvas",
+  "version": "1.0.0",
+  "description": "Vanilla JS real-time collaborative drawing canvas (Socket.io)",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "author": "Student Submission",
+  "license": "MIT"
+}

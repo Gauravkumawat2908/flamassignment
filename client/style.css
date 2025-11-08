@@ -1,0 +1,13 @@
+
+*{box-sizing:border-box}
+body,html{height:100%;margin:0;font-family:Arial,Helvetica,sans-serif}
+#topbar{position:fixed;left:10px;right:10px;top:10px;background:rgba(255,255,255,0.95);padding:8px;border-radius:8px;display:flex;gap:8px;align-items:center;z-index:20}
+#main{display:flex;height:100vh;padding-top:64px}
+#canvasContainer{flex:1;display:flex;align-items:center;justify-content:center;position:relative}
+canvas{background:#fff;border:1px solid #ddd;box-shadow:0 3px 10px rgba(0,0,0,0.06)}
+canvas.overlay{position:absolute;left:0;top:0;pointer-events:none}
+#sidebar{width:220px;background:#f7f7f7;border-left:1px solid #e6e6e6;padding:12px}
+#people{list-style:none;padding:0;margin:0}
+#people li{display:flex;align-items:center;gap:8px;padding:6px 0}
+.dot{width:12px;height:12px;border-radius:50%}
+#roomLabel{margin-left:auto;font-weight:600}

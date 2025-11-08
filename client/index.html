@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Collaborative Canvas (Vanilla JS)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="topbar">
+    <input id="name" placeholder="Your name" />
+    <select id="tool">
+      <option value="pen">Brush</option>
+      <option value="eraser">Eraser</option>
+    </select>
+    <input type="color" id="color" value="#1a1a1a" />
+    <input type="range" id="size" min="1" max="40" value="4" />
+    <button id="btnUndo">Undo</button>
+    <button id="btnRedo">Redo</button>
+    <span id="roomLabel">Room: main</span>
+  </div>
+
+  <div id="main">
+    <div id="canvasContainer">
+      <canvas id="draw"></canvas>
+      <canvas id="cursors" class="overlay"></canvas>
+    </div>
+
+    <aside id="sidebar">
+      <h4>Online</h4>
+      <ul id="people"></ul>
+    </aside>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="app-socket.js"></script>
+  <script src="app-canvas.js"></script>
+  <script src="app-main.js"></script>
+</body>
+</html>

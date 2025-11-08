@@ -26,5 +26,5 @@ A minimal real-time collaborative drawing application built with raw HTML5 Canva
 - No DB persistence or horizontal scaling.
 
 
-2–3 hours (design + coding)
+1 day (design + coding)
 
